@@ -2,7 +2,7 @@
 Project is for a job application test
 
 # Getting Started
-This is REST Service.
+This is a REST Service.
 
 # Prerequisites
 Visual Studio 2017
