@@ -52,7 +52,17 @@ namespace ImportRestAPI.Controllers
                 element = Search(raw_data, element);
 
                 if (element.Exist != null && element.Exist.Value)
+                {
                     element.Value = GetValue(raw_data, element.Name);
+                    if (string.IsNullOrEmpty(element.Value) && element.Name == Constants.COST_CENTRE)
+                    {
+                        element.Value = Constants.UNKNOWN;
+                    }
+                    if (string.IsNullOrEmpty(element.Value) && element.Name == Constants.TOTAL)
+                    {
+                        element.Value = "0";
+                    }
+                }
                 if (element.Exist != null && !element.Exist.Value)
                     element.Value = Constants.UNKNOWN;
                 if (element.Exist == null && element.Start_Tag_Not_Found)
