@@ -1,5 +1,5 @@
 # ImportRestAPI
-Project is for a job application test
+Project is for a coding exercise
 
 # Getting Started
 This is a REST Service.
