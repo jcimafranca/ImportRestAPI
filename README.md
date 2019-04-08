@@ -3,6 +3,10 @@ Project is for a job application test
 
 # Getting Started
 This is a REST Service.
+- that accepts a block of text in json format. 
+- extracts the relevant data. 
+- calculate the GST and total excluding GST based on the extracted <total> (it includes GST).
+- makes the extracted and calculated data available to the service’s client.
 
 # Prerequisites
 Visual Studio 2017
